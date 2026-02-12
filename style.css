@@ -1,11 +1,21 @@
-
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#f4f8fc;color:#1c2b39;line-height:1.6}
-header{position:sticky;top:0;background:#ffffff;padding:15px 60px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:999}
-header nav a{margin-left:25px;text-decoration:none;color:#0b5ed7;font-weight:600}
-.hero{height:85vh;background:url('images/Professional maid service competitors.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;position:relative}
-.hero::before{content:'';position:absolute;inset:0;background:rgba(11,94,215,0.8)}
-.hero-content{position:relative;z-index:2;max-width:900px}
-.btn{display:inline-block;background:#ffd700;color:#000;padding:14px 28px;margin:10px;border-radius:5px;text-decoration:none;font-weight:bold}
-.section{padding:80px 60px}
-footer{background:#0b5ed7;color:#fff;text-align:center;padding:30px;margin-top:40px}
+body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.7;background:#ffffff;color:#3D4127}
+:root{--dark:#3D4127;--primary:#636B2F;--light:#BAC095;--soft:#D4DE95;--white:#ffffff;}
+header{position:sticky;top:0;background:#fff;padding:18px 60px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;z-index:999}
+header nav a{margin-left:30px;text-decoration:none;color:var(--primary);font-weight:600}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:120px 60px;background:var(--soft)}
+.hero-text{max-width:550px}
+.hero img{width:48%;border-radius:12px}
+.btn{display:inline-block;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:600;margin-right:10px}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-outline{border:2px solid var(--primary);color:var(--primary)}
+.section{padding:100px 60px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.card{background:#f9fbff;padding:30px;border-radius:12px;border:1px solid #e5ecf6}
+.before-after{display:flex;gap:40px;align-items:center}
+.before-after img{width:48%;border-radius:12px}
+.testimonials{background:var(--light);padding:100px 60px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.testimonial-card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.guarantee{background:var(--primary);color:#fff;padding:80px;text-align:center}
+footer{background:var(--dark);color:#fff;text-align:center;padding:40px;margin-top:60px}
