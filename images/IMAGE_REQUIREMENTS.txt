@@ -1,0 +1,78 @@
+REQUIRED IMAGES FOR HYGIENEXPERTS WEBSITE
+==========================================
+
+Please add the following images to this folder:
+
+1. hero-banner.jpg (1920x1080px)
+   - Professional cleaning team at work
+   - Or modern clean office space
+   - Bright, professional, inviting
+
+2. about-cleaning.jpg (800x600px)
+   - Team members in uniform
+   - Professional cleaning equipment
+   - Sydney location if possible
+
+3. commercial-cleaning.jpg (800x600px)
+   - Office or commercial space being cleaned
+   - Professional appearance
+   - Modern workplace setting
+
+4. residential-cleaning.jpg (800x600px)
+   - Home cleaning scene
+   - Living room, kitchen, or bedroom
+   - Clean, organized, welcoming
+
+5. office-cleaning.jpg (800x600px)
+   - Office workstation cleaning
+   - Desks, chairs, computers
+   - Corporate environment
+
+6. carpet-cleaning.jpg (800x600px)
+   - Carpet cleaning machine in action
+   - Professional equipment
+   - Before/after results visible
+
+7. end-of-lease-cleaning.jpg (800x600px)
+   - Empty property being cleaned
+   - Moving boxes, clean space
+   - Professional service
+
+8. rangehood-cleaning.jpg (800x600px)
+   - Commercial kitchen rangehood
+   - Cleaning equipment
+   - Restaurant kitchen setting
+
+9. before-after-1.jpg (800x600px)
+   - Split image showing transformation
+   - Dirty vs clean comparison
+   - Impressive results
+
+10. before-after-2.jpg (800x600px)
+    - Another transformation example
+    - Different area or service
+    - Clear improvement visible
+
+11. logo.png (300x300px)
+    - Company logo
+    - Transparent background
+    - High quality PNG
+
+IMAGE OPTIMIZATION TIPS:
+========================
+- Compress before uploading (use tinypng.com)
+- Keep file sizes under 200KB
+- Use descriptive file names
+- Maintain quality at 80-85%
+- JPG for photos, PNG for logo
+
+FREE STOCK PHOTO SOURCES:
+=========================
+- Unsplash.com (search: "office cleaning", "commercial cleaning")
+- Pexels.com (search: "cleaning service", "janitor")
+- Pixabay.com (search: "cleaner", "cleaning")
+
+Or use your own professional photos for best results!
+
+NOTE: Without these images, the website will show broken image icons.
+Add your own professional photos to make the website look complete.
