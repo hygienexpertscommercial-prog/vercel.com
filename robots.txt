@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hygienexperts.com.au/sitemap.xml
