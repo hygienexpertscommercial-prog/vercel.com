@@ -1,325 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Sydney's premier commercial cleaning company. 8+ years experience, eco-friendly solutions, certified professionals across Greater Sydney Metro.">
-    <meta name="keywords" content="commercial cleaning sydney, office cleaning services sydney, residential cleaning sydney, commercial cleaner sydney, about hygienexperts">
-    <meta name="author" content="HygieneXperts Commercial & Residential Cleaning Services">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="About HygieneXperts | Commercial Cleaning Sydney Experts Since 2017">
-    <meta property="og:description" content="Discover why businesses across Sydney trust HygieneXperts for commercial cleaning, office cleaning, and residential cleaning services.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hygienexperts.com.au/about.html">
-    <meta property="og:image" content="https://hygienexperts.com.au/images/about-banner.jpg">
-    <link rel="canonical" href="https://hygienexperts.com.au/about.html">
-    <title>About HygieneXperts | Commercial Cleaning Sydney Experts Since 2017</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About HygieneXperts, specialist commercial kitchen cleaning experts serving food businesses across Sydney.">
+  <title>About | HygieneXperts</title>
+  <link rel="canonical" href="https://hygienexperts.com.au/about.html">
+  <style>
+    :root { --primary:#0d5ca8; --dark:#11263d; --light:#eef5ff; --text:#223247; --muted:#5a6b7c; --white:#fff; --border:#dbe7f6; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, sans-serif; line-height:1.6; color:var(--text); background:#f8fbff; }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    header { background:rgba(17, 38, 61, 0.96); }
+    .nav { display:flex; align-items:center; justify-content:space-between; min-height:74px; }
+    .brand { color:var(--white); font-weight:800; letter-spacing:.04em; }
+    .menu { list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center; }
+    .menu a { color:var(--white); font-weight:600; }
+    .menu .phone { background:var(--white); color:var(--primary); padding:10px 16px; border-radius:999px; }
+    .hero { background:linear-gradient(135deg, #0d5ca8, #11263d); color:var(--white); padding:110px 0 80px; }
+    .hero h1 { font-size:clamp(2.2rem, 4vw, 3.4rem); margin:0 0 14px; }
+    .hero p { margin:0; max-width:760px; color:rgba(255,255,255,.86); }
+    .section { padding:80px 0; }
+    .section-header { margin-bottom:26px; }
+    .eyebrow { display:inline-block; font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); font-weight:800; }
+    h2 { font-size:clamp(2rem, 3vw, 2.8rem); margin:10px 0; }
+    .grid { display:grid; grid-template-columns:1.05fr .95fr; gap:24px; }
+    .panel { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:26px; }
+    .panel p { color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px; margin-top:18px; }
+    .card { background:var(--light); border:1px solid var(--border); border-radius:18px; padding:24px; }
+    .card h3 { margin-top:0; }
+    .card p { margin:0; color:var(--muted); }
+    .cta-band { background:linear-gradient(135deg, #0f4a8c, #16395d); color:var(--white); padding:52px 0; }
+    .cta-band .wrap { display:flex; justify-content:space-between; gap:16px; align-items:center; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:15px 22px; border-radius:999px; font-weight:700; }
+    .btn.primary { background:var(--white); color:var(--primary); }
+    .btn.secondary { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,.7); }
+    footer { background:#0f1728; color:rgba(255,255,255,.85); padding:54px 0 16px; }
+    .footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:26px; }
+    .footer-grid h4 { margin-top:0; color:var(--white); }
+    .footer-grid ul { list-style:none; margin:0; padding:0; }
+    .footer-grid li { margin:10px 0; }
+    .small { font-size:.92rem; color:rgba(255,255,255,.72); }
+    .copyright { border-top:1px solid rgba(255,255,255,.08); margin-top:24px; padding-top:16px; text-align:center; }
+    @media (max-width:760px){ .menu{display:none;} .grid{grid-template-columns:1fr;} .footer-grid{grid-template-columns:1fr;} }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="https://hygienexperts.com.au/">
-                        <span class="logo-text">HygieneXperts</span>
-                    </a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="https://hygienexperts.com.au/">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="tel:+61498203983" class="nav-phone">+61 498 203 983</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">HygieneXperts</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="phone" href="tel:+61422556202">+61422556202</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero inner-hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">About HygieneXperts - Sydney's Trusted <span class="highlight">Commercial Cleaning Sydney</span> Partner</h1>
-                <p class="hero-subtitle">Delivering excellence in commercial cleaning, office cleaning services, and residential cleaning across Greater Sydney Metro for over 8 years.</p>
-            </div>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow" style="color:#d7e9ff;">About us</div>
+      <h1>Commercial kitchen cleaning specialists serving food businesses with care and precision.</h1>
+      <p>HygieneXperts exists to help commercial kitchens stay clean, safe and operationally efficient. We focus on specialist cleaning services that support compliance, protect equipment and create a better experience for staff and customers.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container grid">
+        <div class="panel">
+          <div class="section-header">
+            <span class="eyebrow">Our story</span>
+            <h2>Built around quality, safety and kitchen performance.</h2>
+          </div>
+          <p>We recognised a gap in the market: many businesses needed a partner who understood the strict hygiene demands of commercial kitchens, not just a generic cleaner. That is why HygieneXperts specialises in high-risk cleaning areas such as rangehoods, exhaust systems, fryer equipment, cool rooms and hard-to-access kitchen surfaces.</p>
+          <p>Our approach is straightforward: clean thoroughly, work safely and help your business maintain a high standard of food safety and presentation. We combine specialist cleaning expertise with a practical understanding of hospitality operations, so we can work efficiently without disrupting service.</p>
         </div>
+        <div class="panel">
+          <div class="section-header">
+            <span class="eyebrow">Why choose us</span>
+            <h2>Focused on commercial kitchen standards.</h2>
+          </div>
+          <p>Our team works with cafes, restaurants, takeaway businesses, hospitality venues, clubs and food production spaces. We understand the issues that matter most: grease build-up, poor airflow, compliance risk, unsanitary surfaces and equipment wear.</p>
+          <p>Whether you need routine maintenance or a deep clean, we deliver service with attention to detail, clear communication and dependable scheduling.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Company Story Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-text">
-                    <span class="section-tag">Our Story</span>
-                    <h2 class="section-title">Building Sydney's Most Trusted Cleaning Service Since 2017</h2>
-                    
-                    <p>HygieneXperts was founded in 2017 with a singular vision: to transform the <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> industry through exceptional service, eco-friendly practices, and unwavering commitment to client satisfaction. What began as a small team of dedicated cleaning professionals has evolved into one of Greater Sydney Metro's most trusted names in commercial and residential cleaning services.</p>
-                    
-                    <p>Over the past eight years, we've had the privilege of serving hundreds of businesses and families across Sydney, from small startups to large corporate offices, from cozy apartments to sprawling residential properties. Our journey has been defined by continuous learning, innovation, and an unyielding dedication to exceeding client expectations with every <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a> project we undertake.</p>
-                    
-                    <p>Our founder recognized a critical gap in the Sydney cleaning market: while many companies offered basic cleaning services, few truly understood the unique needs of different commercial environments or prioritized environmentally responsible practices. This insight became the cornerstone of HygieneXperts' philosophy. We invested heavily in training our team, sourcing premium eco-friendly cleaning products, and developing specialized protocols for different types of properties and industries.</p>
-                    
-                    <p>Today, HygieneXperts stands as a testament to what's possible when passion meets professionalism. Our team has grown to include certified cleaning specialists, each bringing unique expertise in areas ranging from <a href="https://hygienexperts.com.au/">carpet cleaner Sydney</a> services to specialized commercial kitchen maintenance. We've expanded our service offerings while never compromising on the quality and personal attention that defined our early days.</p>
-                    
-                    <p>What truly sets us apart in the competitive <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> landscape is our holistic approach to cleaning excellence. We don't just clean surfaces; we create healthier, more productive environments for our clients. Our comprehensive training programs ensure every team member understands not only how to clean effectively but why each procedure matters for health, safety, and environmental sustainability.</p>
-                    
-                    <p>Our commitment to eco-friendly practices isn't just a marketing message—it's embedded in every aspect of our operations. From day one, we've partnered with leading manufacturers of sustainable cleaning products, ensuring that our <a href="https://hygienexperts.com.au/">residential cleaning Sydney</a> and commercial services protect both your property and the environment. We continuously evaluate new technologies and methodologies that allow us to deliver superior results while minimizing our ecological footprint.</p>
-                    
-                    <p>Over the years, we've built strong relationships with property managers, business owners, and homeowners who trust us with their most valuable assets. These partnerships have taught us invaluable lessons about flexibility, reliability, and the importance of consistent communication. Whether it's a last-minute request for <a href="https://hygienexperts.com.au/">end of lease cleaning Sydney</a> or a long-term contract for daily office maintenance, we approach each project with the same level of dedication and attention to detail.</p>
-                    
-                    <p>Our growth has been organic and sustainable, driven entirely by client referrals and positive word-of-mouth. This speaks volumes about the quality of our work and the relationships we've built throughout Sydney. From the North Shore to the Inner West, from Parramatta to the Eastern Suburbs, our reputation for excellence in <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a> precedes us.</p>
-                </div>
-            </div>
+    <section class="section" style="background:#edf5ff;">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">What we stand for</span>
+          <h2>Our values and commitments.</h2>
         </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Professionalism</h3>
+            <p>We arrive on time, work carefully and uphold high standards in every commercial kitchen we service.</p>
+          </article>
+          <article class="card">
+            <h3>Safety</h3>
+            <p>We focus on grease reduction, ventilation care and equipment maintenance to support safe working conditions.</p>
+          </article>
+          <article class="card">
+            <h3>Compliance</h3>
+            <p>Our service helps maintain consistent cleanliness and reduces the risk of hygiene and fire-related issues.</p>
+          </article>
+          <article class="card">
+            <h3>Reliability</h3>
+            <p>We schedule around your trade hours and provide dependable service with clear communication from start to finish.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Mission & Vision Section -->
-    <section class="section-padding" style="background-color: var(--bg-light);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Mission & Vision</span>
-                <h2 class="section-title">Committed to Excellence in Every Clean</h2>
-            </div>
-            
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <h3>Our Mission</h3>
-                    <p>To provide exceptional <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> and residential cleaning services that enhance health, productivity, and environmental sustainability. We strive to exceed client expectations through professional expertise, eco-friendly solutions, and unwavering commitment to quality in every service we deliver across Greater Sydney Metro.</p>
-                </div>
-                
-                <div class="mission-card">
-                    <h3>Our Vision</h3>
-                    <p>To be recognized as Sydney's premier cleaning service provider, setting industry standards for quality, innovation, and customer satisfaction. We envision a future where every business and home in Sydney has access to world-class, environmentally responsible cleaning solutions that contribute to healthier, more productive spaces.</p>
-                </div>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">How we work</span>
+          <h2>Practical service for busy food businesses.</h2>
         </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Assessment</h3>
+            <p>We inspect the kitchen systems, grease points and equipment to identify the right level of cleaning.</p>
+          </article>
+          <article class="card">
+            <h3>Custom plan</h3>
+            <p>Every venue is different, so we tailor our service schedule and cleaning method to your business requirements.</p>
+          </article>
+          <article class="card">
+            <h3>Thorough clean</h3>
+            <p>We complete the cleaning efficiently and leave your kitchen ready for safe, high-quality operation.</p>
+          </article>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Core Values Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Values</span>
-                <h2 class="section-title">The Principles That Guide Everything We Do</h2>
-                <p class="section-description">At HygieneXperts, our values aren't just words on a page—they're the foundation of how we approach every <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a> project and client relationship.</p>
-            </div>
-            
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Professionalism</h3>
-                    <p>We maintain the highest standards of professionalism in every aspect of our <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> services. Our uniformed, background-checked team arrives on time, works efficiently, and treats every property with respect and care.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Reliability</h3>
-                    <p>Consistency is the cornerstone of trust. Whether you need daily <a href="https://hygienexperts.com.au/">office cleaning Sydney</a> or weekly residential services, you can count on us to deliver the same exceptional results every single time.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3>Eco-Friendly Practices</h3>
-                    <p>Environmental responsibility is non-negotiable. All our cleaning products are certified eco-friendly, ensuring your <a href="https://hygienexperts.com.au/">residential cleaning Sydney</a> or commercial space is safe for people, pets, and the planet.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <h3>Customer Satisfaction</h3>
-                    <p>Your satisfaction is our ultimate measure of success. We listen to feedback, adapt to your needs, and continuously improve our <a href="https://hygienexperts.com.au/">commercial cleaner Sydney</a> services to ensure you're completely delighted with every clean.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="cta-band">
+    <div class="container wrap">
+      <div>
+        <div class="eyebrow" style="color:#d6e8ff;">Let’s talk</div>
+        <h2 style="margin:8px 0 0;">Need a specialist kitchen cleaning partner?</h2>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+        <a class="btn secondary" href="tel:+61422556202">Call +61422556202</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Team Expertise Section -->
-    <section class="section-padding" style="background-color: var(--bg-light);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Team</span>
-                <h2 class="section-title">Certified Professionals You Can Trust</h2>
-                <p class="section-description">Every HygieneXperts team member undergoes rigorous training and certification to deliver exceptional <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> results.</p>
-            </div>
-            
-            <div class="expertise-content">
-                <p>Our team is our greatest asset. Each cleaning professional at HygieneXperts brings specialized expertise developed through comprehensive training programs and years of hands-on experience. We invest heavily in continuous education, ensuring our team stays current with the latest cleaning technologies, safety protocols, and industry best practices.</p>
-                
-                <p>From <a href="https://hygienexperts.com.au/">carpet cleaner Sydney</a> specialists trained in advanced stain removal techniques to commercial kitchen experts certified in food safety compliance, our diverse team can handle any cleaning challenge. We're proud that many of our team members have been with us since the early days, bringing institutional knowledge and commitment to excellence that newer cleaning companies simply can't match.</p>
-                
-                <p>All team members undergo thorough background checks, are fully insured, and receive ongoing training in customer service, safety procedures, and specialized cleaning techniques. This investment in our people translates directly into superior service for our clients across all our offerings, from routine <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a> to specialized projects like <a href="https://hygienexperts.com.au/">bond cleaning Sydney</a> and <a href="https://hygienexperts.com.au/">rangehood cleaning Sydney</a>.</p>
-
-                <p>Beyond technical skills, our team embodies the values that define HygieneXperts. They understand that entering a client's business or home is a privilege that demands respect, discretion, and professionalism. Whether performing <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> in a bustling office or <a href="https://hygienexperts.com.au/">house cleaning Sydney</a> in someone's personal space, our team maintains the highest standards of conduct and courtesy.</p>
-
-                <p>Our commitment to employee development and satisfaction creates a positive work environment that translates into better service for our clients. Low turnover rates mean you're likely to see the same familiar, trusted faces on each visit—building relationships and ensuring consistent understanding of your preferences and requirements for <a href="https://hygienexperts.com.au/">office cleaning Sydney</a> and residential services.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technology & Innovation Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Innovation</span>
-                <h2 class="section-title">Leveraging Technology for Superior Cleaning Results</h2>
-                <p class="section-description">We invest in the latest cleaning technology and methods to deliver exceptional <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> results.</p>
-            </div>
-
-            <div class="content-text">
-                <p>At HygieneXperts, we believe that exceptional <a href="https://hygienexperts.com.au/">commercial cleaner Sydney</a> service requires more than just hard work—it demands smart work powered by technology and innovation. We continuously invest in cutting-edge cleaning equipment, advanced cleaning solutions, and digital management systems that enhance efficiency, ensure consistency, and deliver measurably superior results for our clients.</p>
-
-                <p>Our equipment fleet represents the latest advances in cleaning technology. From HEPA-filtered vacuums that capture microscopic allergens to commercial-grade steam cleaners for <a href="https://hygienexperts.com.au/">carpet cleaner Sydney</a> services, we utilize tools that professional cleaning companies have proven deliver the best results. This commitment to quality equipment means faster service, deeper cleaning, and longer-lasting results for both our <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> and residential clients.</p>
-
-                <p>We've also embraced digital technology to improve service delivery and client communication. Our proprietary scheduling and quality control systems ensure that every <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a> visit is documented, tracked, and verified. Clients can access real-time updates, submit special requests, and provide feedback through our digital platforms, creating transparency and accountability that sets new standards in the cleaning industry.</p>
-
-                <p>Innovation extends to our cleaning solutions as well. We partner with leading manufacturers of eco-friendly cleaning products, constantly testing and adopting new formulations that deliver superior cleaning power without harsh chemicals. This commitment to green innovation ensures that our <a href="https://hygienexperts.com.au/">residential cleaning Sydney</a> and commercial services protect both your health and the environment while achieving spotless results.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Relationships Section -->
-    <section class="section-padding" style="background-color: var(--bg-light);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Approach</span>
-                <h2 class="section-title">Building Long-Term Partnerships, Not Just Completing Jobs</h2>
-            </div>
-
-            <div class="content-text">
-                <p>What truly distinguishes HygieneXperts in the competitive <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a> marketplace is our relationship-focused approach. While many cleaning companies view clients as transactions, we see every engagement as the beginning of a long-term partnership built on trust, reliability, and mutual respect.</p>
-
-                <p>This philosophy manifests in every aspect of our service delivery. We assign dedicated account managers to our commercial clients, ensuring consistent communication and personalized attention. For residential clients using our <a href="https://hygienexperts.com.au/">house cleaning Sydney</a> services, we strive to send the same team members for each visit, allowing them to learn your preferences and deliver increasingly tailored service over time.</p>
-
-                <p>We proactively seek feedback and view it as the cornerstone of continuous improvement. After every <a href="https://hygienexperts.com.au/">office cleaning Sydney</a> service, we follow up to ensure complete satisfaction. When clients provide suggestions or identify areas for improvement, we take immediate action, demonstrating our commitment to not just meeting but exceeding expectations.</p>
-
-                <p>Our client retention rates speak volumes about the quality of our service and the strength of our relationships. Many of our commercial clients have been with us since our founding in 2017, while residential clients frequently expand their services from basic <a href="https://hygienexperts.com.au/">residential cleaning Sydney</a> to include specialized offerings like <a href="https://hygienexperts.com.au/">carpet cleaner Sydney</a> and seasonal deep cleaning. This loyalty reflects the trust we've earned through consistent excellence and genuine care for our clients' satisfaction.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Certifications</span>
-                <h2 class="section-title">Accredited & Fully Insured</h2>
-            </div>
-            
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <h4>IICRC Certified</h4>
-                    <p>Institute of Inspection, Cleaning and Restoration Certification for carpet and upholstery cleaning</p>
-                </div>
-                <div class="cert-item">
-                    <h4>AS 1851-2012 Compliant</h4>
-                    <p>Australian standards for <a href="https://hygienexperts.com.au/">rangehood cleaning Sydney</a> and commercial kitchen exhaust systems</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Public Liability Insurance</h4>
-                    <p>$20 million coverage protecting your property and peace of mind</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Eco-Certified Products</h4>
-                    <p>All cleaning solutions meet Australian environmental standards</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Experience the HygieneXperts Difference</h2>
-                <p>Join hundreds of satisfied Sydney businesses and homeowners who trust us for their cleaning needs.</p>
-                <div class="cta-buttons">
-                    <a href="https://hygienexperts.com.au/" class="btn btn-primary">Request Free Quote</a>
-                    <a href="tel:+61498203983" class="btn btn-secondary">Call Now: +61 498 203 983</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>HygieneXperts</h3>
-                    <p>Sydney's trusted partner for <a href="https://hygienexperts.com.au/">commercial cleaning Sydney</a>, <a href="https://hygienexperts.com.au/">office cleaning services Sydney</a>, and <a href="https://hygienexperts.com.au/">residential cleaning Sydney</a>.</p>
-                    <p class="footer-contact">
-                        <strong>Phone:</strong> <a href="tel:+61498203983">+61 498 203 983</a><br>
-                        <strong>Email:</strong> <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br>
-                        <strong>Address:</strong> 12C Tungarra Rd, Girraween, NSW 2145
-                    </p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://hygienexperts.com.au/">Commercial Cleaning Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Office Cleaning Services Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Residential Cleaning Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Carpet Cleaner Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">End of Lease Cleaning Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Bond Cleaning Sydney</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Rangehood Cleaning Sydney</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://hygienexperts.com.au/">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="https://hygienexperts.com.au/">Request Quote</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
-                    <p>Serving all of Greater Sydney Metro including CBD, North Shore, Eastern Suburbs, Inner West, Western Sydney, Canterbury-Bankstown, Parramatta, and surrounding areas.</p>
-                    <p><strong>Available 24/7 for your convenience</strong></p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 HygieneXperts. All rights reserved. | <a href="https://hygienexperts.com.au/">Professional Commercial Cleaning Sydney</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>HygieneXperts</h4>
+        <p class="small">Commercial kitchen cleaning specialists working across Sydney hospitality and food service businesses.</p>
+        <p class="small">Phone: <a href="tel:+61422556202">+61422556202</a><br>Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br>Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="small">
+          <li><a href="services.html">Rangehood cleaning</a></li>
+          <li><a href="services.html">Duct cleaning</a></li>
+          <li><a href="services.html">Deep kitchen cleaning</a></li>
+          <li><a href="services.html">Fryer cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright small">© 2026 HygieneXperts. All rights reserved.</div>
+  </footer>
 </body>
 </html>
