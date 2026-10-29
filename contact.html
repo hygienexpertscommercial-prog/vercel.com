@@ -1,155 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact HygieneXperts for commercial kitchen cleaning services, quote requests and specialist kitchen maintenance support.">
-  <title>Contact | HygieneXperts</title>
-  <link rel="canonical" href="https://hygienexperts.com.au/contact.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact HygieneXperts for specialist commercial kitchen cleaning services. Call +61422556202 or email info@hygienexperts.com.au." />
+  <title>Contact HygieneXperts | Commercial Kitchen Cleaning Specialists</title>
+  <link rel="canonical" href="https://hygienexperts.com.au/contact.html" />
   <style>
-    :root { --primary:#0d5ca8; --dark:#11263d; --light:#eef5ff; --text:#223247; --muted:#5a6b7c; --white:#fff; --border:#dbe7f6; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial, sans-serif; line-height:1.6; color:var(--text); background:#f8fbff; }
-    a { color:inherit; text-decoration:none; }
-    .container { width:min(1120px, calc(100% - 30px)); margin:0 auto; }
-    header { background:rgba(17,38,61,.96); }
-    .nav { display:flex; justify-content:space-between; align-items:center; min-height:74px; }
-    .brand { color:var(--white); font-weight:800; letter-spacing:.04em; }
-    .menu { list-style:none; display:flex; align-items:center; gap:24px; margin:0; padding:0; }
-    .menu a { color:var(--white); font-weight:600; }
-    .menu .phone { background:var(--white); color:var(--primary); padding:10px 16px; border-radius:999px; }
-    .hero { background:linear-gradient(135deg, #0d5ca8, #11263d); color:var(--white); padding:110px 0 80px; }
-    .hero h1 { margin:0 0 12px; font-size:clamp(2.2rem,4vw,3.3rem); }
-    .hero p { margin:0; max-width:760px; color:rgba(255,255,255,.9); }
-    .section { padding:80px 0; }
-    .section-header { margin-bottom:22px; }
-    .eyebrow { display:inline-block; font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); font-weight:800; }
-    h2 { font-size:clamp(2rem,3vw,2.8rem); margin:12px 0; }
-    .grid { display:grid; grid-template-columns:1.1fr .9fr; gap:26px; }
-    .panel { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:26px; }
-    .panel h3 { margin-top:0; }
-    form { display:grid; gap:14px; }
-    input, textarea, select { width:100%; padding:14px 16px; border:1px solid var(--border); border-radius:10px; font:inherit; }
-    textarea { min-height:140px; }
-    .btn { display:inline-block; padding:15px 22px; border:none; border-radius:999px; font-weight:700; background:var(--primary); color:var(--white); cursor:pointer; }
-    .info-list { list-style:none; padding:0; margin:0; }
-    .info-list li { margin:14px 0; color:var(--muted); }
-    .cta-band { background:linear-gradient(135deg, #0f4a8c, #16395d); color:var(--white); padding:52px 0; }
-    .wrap { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
-    .btn.secondary { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,.7); }
-    footer { background:#0f1728; color:rgba(255,255,255,.85); padding:54px 0 16px; }
-    .footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:26px; }
-    .footer-grid h4 { margin-top:0; color:var(--white); }
-    .footer-grid ul { list-style:none; padding:0; margin:0; }
-    .footer-grid li { margin:10px 0; }
-    .small { font-size:.92rem; color:rgba(255,255,255,.72); }
-    .copyright { border-top:1px solid rgba(255,255,255,.08); margin-top:24px; padding-top:16px; text-align:center; }
-    @media (max-width:760px){ .menu{display:none;} .grid{grid-template-columns:1fr;} .footer-grid{grid-template-columns:1fr;} }
+    :root {
+      --primary: #0d5ca8;
+      --primary-dark: #0a467d;
+      --ink: #1f2d3d;
+      --muted: #586779;
+      --bg: #f4f8fc;
+      --white: #ffffff;
+      --line: #dfeaf5;
+      --accent: #eaf4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1140px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(17, 35, 52, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
+    .brand { color: var(--white); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; }
+    .menu { list-style: none; display: flex; align-items: center; gap: 22px; margin: 0; padding: 0; }
+    .menu a { color: var(--white); font-weight: 700; opacity: 0.9; }
+    .phone-pill {
+      display: inline-block;
+      background: var(--white);
+      color: var(--primary);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 90px 0 70px;
+    }
+    .eyebrow {
+      display: inline-block;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #d5e9ff;
+      font-weight: 800;
+      font-size: 0.76rem;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(2.2rem, 4vw, 3.5rem); margin: 0 0 18px; line-height: 1.08; }
+    .hero p { margin: 0; color: rgba(255,255,255,0.9); font-size: 1.05rem; }
+    .section { padding: 80px 0; }
+    .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 26px; }
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 20px 45px rgba(17,35,52,0.04);
+    }
+    .panel h2 { margin-top: 0; margin-bottom: 16px; font-size: clamp(1.7rem, 3vw, 2.2rem); }
+    .details { list-style: none; padding: 0; margin: 0; }
+    .details li { margin: 12px 0; color: var(--ink); }
+    .details strong { display: inline-block; width: 90px; }
+    .contact-form { display: grid; gap: 16px; }
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; font: inherit; background: #fff;
+    }
+    .contact-form textarea { min-height: 150px; resize: vertical; }
+    .submit-btn {
+      display: inline-block;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 22px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    footer {
+      background: #11263d;
+      color: rgba(255,255,255,0.82);
+      padding: 56px 0 22px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h3 { color: var(--white); margin: 0 0 14px; }
+    .footer-grid p, .footer-grid li { color: rgba(255,255,255,0.7); }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+    .footer-grid li { margin: 8px 0; }
+    .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 18px; text-align: center; color: rgba(255,255,255,0.72); }
+    @media (max-width: 900px) {
+      .menu { display: none; }
+      .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html">HygieneXperts</a>
+      <a href="index.html" class="brand">HygieneXperts</a>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="phone" href="tel:+61422556202">+61422556202</a></li>
+        <li><a class="phone-pill" href="tel:+61422556202">+61422556202</a></li>
       </ul>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="eyebrow" style="color:#d7e9ff;">Contact us</div>
-      <h1>Request a quote for specialist commercial kitchen cleaning.</h1>
-      <p>Tell us about your kitchen and we’ll recommend the right service schedule, cleaning scope and support for your business.</p>
+      <div class="eyebrow">Contact us</div>
+      <h1>Speak with HygieneXperts today.</h1>
+      <p>Need a quote for specialist commercial kitchen cleaning? We are ready to help with rangehoods, ducts, ovens, cool rooms and full kitchen maintenance support.</p>
     </div>
   </section>
 
-  <main>
-    <section class="section">
-      <div class="container grid">
-        <div class="panel">
-          <div class="section-header">
-            <span class="eyebrow">Get in touch</span>
-            <h2>Request a free quote</h2>
-          </div>
-          <form action="mailto:info@hygienexperts.com.au" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Full name" required>
-            <input type="email" name="email" placeholder="Email address" required>
-            <input type="tel" name="phone" placeholder="Phone number" required>
-            <select name="service">
-              <option>Rangehood, Canopy & Filter Cleaning</option>
-              <option>Exhaust Fan & Duct Cleaning</option>
-              <option>Deep Kitchen & Cool Room Cleaning</option>
-              <option>Equipment & Fryer Cleaning</option>
-              <option>Cooking Oil Change Service</option>
-              <option>Duct Access Panel Installation</option>
-              <option>High-Pressure Cleaning</option>
-            </select>
-            <textarea name="message" placeholder="Tell us about your kitchen or service requirements" required></textarea>
-            <button class="btn" type="submit">Request a Quote</button>
-          </form>
-        </div>
-        <div class="panel">
-          <div class="section-header">
-            <span class="eyebrow">Contact details</span>
-            <h2>Speak to the team</h2>
-          </div>
-          <ul class="info-list">
-            <li><strong>Phone:</strong> <a href="tel:+61422556202">+61422556202</a></li>
-            <li><strong>Email:</strong> <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a></li>
-            <li><strong>Website:</strong> <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></li>
-            <li><strong>Hours:</strong> 24/7 support for service bookings and urgent enquiries</li>
-          </ul>
-        </div>
+  <main class="section">
+    <div class="container contact-grid">
+      <div class="panel">
+        <h2>Get in touch</h2>
+        <ul class="details">
+          <li><strong>Phone:</strong> <a href="tel:+61422556202">+61422556202</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a></li>
+          <li><strong>Website:</strong> <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></li>
+          <li><strong>Service:</strong> Commercial kitchen cleaning and specialist maintenance</li>
+        </ul>
       </div>
-    </section>
+
+      <div class="panel">
+        <h2>Request a quote</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your name" aria-label="Your name" />
+          <input type="email" placeholder="Email address" aria-label="Email address" />
+          <input type="tel" placeholder="Phone number" aria-label="Phone number" />
+          <textarea placeholder="Tell us about your kitchen cleaning requirements" aria-label="Your message"></textarea>
+          <button type="submit" class="submit-btn">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
   </main>
-
-  <section class="cta-band">
-    <div class="container wrap">
-      <div>
-        <div class="eyebrow" style="color:#d6e8ff;">Need urgent help?</div>
-        <h2 style="margin:8px 0 0;">Call now for specialist kitchen cleaning support.</h2>
-      </div>
-      <div style="display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="btn secondary" href="tel:+61422556202">Call +61422556202</a>
-      </div>
-    </div>
-  </section>
 
   <footer>
     <div class="container footer-grid">
       <div>
-        <h4>HygieneXperts</h4>
-        <p class="small">Specialist commercial kitchen cleaning for hospitality and food service businesses.</p>
-        <p class="small">Phone: <a href="tel:+61422556202">+61422556202</a><br>Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br>Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
+        <h3>HygieneXperts</h3>
+        <p>Commercial kitchen cleaning specialists supporting safe, compliant and efficient food service operations.</p>
+        <p>Phone: <a href="tel:+61422556202">+61422556202</a><br />Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br />Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
       </div>
       <div>
-        <h4>Services</h4>
-        <ul class="small">
-          <li>Rangehood cleaning</li>
-          <li>Exhaust duct cleaning</li>
-          <li>Cool room cleaning</li>
-          <li>Fryer cleaning</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Quick links</h4>
-        <ul class="small">
+        <h3>Quick links</h3>
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Key services</h3>
+        <ul>
+          <li>Rangehood cleaning</li>
+          <li>Ventilation duct cleaning</li>
+          <li>Cool room cleaning</li>
+          <li>Fryer and equipment care</li>
         </ul>
       </div>
     </div>
-    <div class="container copyright small">© 2026 HygieneXperts. All rights reserved.</div>
+    <div class="container copyright">© 2026 HygieneXperts. All rights reserved.</div>
   </footer>
 </body>
 </html>

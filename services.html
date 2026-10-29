@@ -1,159 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Specialist commercial kitchen cleaning services including rangehood, canopy, filter, exhaust fan, duct, fryer, cool room, high-pressure and oil change cleaning.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Commercial kitchen cleaning services in Sydney including rangehood cleaning, exhaust fan cleaning, duct cleaning, cool room cleaning, fryer cleaning and oil change service." />
   <title>Commercial Kitchen Cleaning Services | HygieneXperts</title>
-  <link rel="canonical" href="https://hygienexperts.com.au/services.html">
+  <link rel="canonical" href="https://hygienexperts.com.au/services.html" />
   <style>
-    :root { --primary:#0d5ca8; --dark:#11263d; --light:#eef5ff; --text:#223247; --muted:#5a6b7c; --white:#fff; --border:#dbe7f6; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial, sans-serif; color:var(--text); background:#f8fbff; line-height:1.6; }
-    a { color:inherit; text-decoration:none; }
-    .container { width:min(1120px, calc(100% - 30px)); margin:0 auto; }
-    header { background:rgba(17,38,61,.96); }
-    .nav { display:flex; align-items:center; justify-content:space-between; min-height:74px; }
-    .brand { color:var(--white); font-weight:800; letter-spacing:.04em; }
-    .menu { list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center; }
-    .menu a { color:var(--white); font-weight:600; }
-    .menu .phone { background:var(--white); color:var(--primary); padding:10px 16px; border-radius:999px; }
-    .hero { background:linear-gradient(135deg, #0d5ca8, #11263d); color:var(--white); padding:110px 0 80px; }
-    .hero h1 { margin:0 0 12px; font-size:clamp(2.1rem,4vw,3.4rem); }
-    .hero p { margin:0; max-width:760px; color:rgba(255,255,255,.9); }
-    .section { padding:80px 0; }
-    .eyebrow { display:inline-block; font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); font-weight:800; }
-    h2 { font-size:clamp(2rem,3vw,2.8rem); margin:12px 0 12px; }
-    .intro { color:var(--muted); max-width:760px; }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
-    .card { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:24px; }
-    .card h3 { margin-top:0; }
-    .card ul { margin:12px 0 0; padding-left:18px; color:var(--muted); }
-    .card li { margin:8px 0; }
-    .service-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
-    .service-card { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:26px; box-shadow:0 8px 24px rgba(17,38,61,.04); }
-    .service-card h3 { margin-top:0; }
-    .service-card p { color:var(--muted); }
-    .cta-band { background:linear-gradient(135deg,#0f4a8c,#16395d); color:var(--white); padding:52px 0; }
-    .cta-band .wrap { display:flex; justify-content:space-between; gap:16px; align-items:center; flex-wrap:wrap; }
-    .btn { display:inline-block; padding:15px 22px; border-radius:999px; font-weight:700; }
-    .btn.primary { background:var(--white); color:var(--primary); }
-    .btn.secondary { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,.7); }
-    footer { background:#0f1728; color:rgba(255,255,255,.85); padding:54px 0 16px; }
-    .footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:26px; }
-    .footer-grid h4 { margin-top:0; color:var(--white); }
-    .footer-grid ul { list-style:none; margin:0; padding:0; }
-    .footer-grid li { margin:10px 0; }
-    .small { font-size:.92rem; color:rgba(255,255,255,.72); }
-    .copyright { border-top:1px solid rgba(255,255,255,.08); margin-top:24px; padding-top:16px; text-align:center; }
-    @media (max-width:760px){ .menu{display:none;} .footer-grid{grid-template-columns:1fr;} }
+    :root {
+      --primary: #0d5ca8;
+      --primary-dark: #0a467d;
+      --ink: #1f2d3d;
+      --muted: #586779;
+      --bg: #f4f8fc;
+      --white: #ffffff;
+      --line: #dfeaf5;
+      --accent: #eaf4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1140px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(17, 35, 52, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
+    .brand { color: var(--white); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; }
+    .menu { list-style: none; display: flex; align-items: center; gap: 22px; margin: 0; padding: 0; }
+    .menu a { color: var(--white); font-weight: 700; opacity: 0.9; }
+    .phone-pill {
+      display: inline-block;
+      background: var(--white);
+      color: var(--primary);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+      padding: 90px 0 70px;
+    }
+    .eyebrow {
+      display: inline-block;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #d5e9ff;
+      font-weight: 800;
+      font-size: 0.76rem;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(2.2rem, 4vw, 3.8rem); margin: 0 0 18px; line-height: 1.08; }
+    .hero p { margin: 0; color: rgba(255,255,255,0.9); font-size: 1.05rem; }
+    .section { padding: 80px 0; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+    .service-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px 22px;
+      box-shadow: 0 18px 40px rgba(17,35,52,0.03);
+    }
+    .service-item h3 { margin-top: 0; margin-bottom: 10px; font-size: 1.3rem; }
+    .service-item p { margin: 0; color: var(--muted); }
+    .cta {
+      background: linear-gradient(135deg, #0f4f90, #163d66);
+      color: var(--white);
+      padding: 64px 0;
+    }
+    .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .cta h2 { margin: 0; color: var(--white); font-size: clamp(1.8rem, 3vw, 2.6rem); }
+    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    .btn-primary { background: var(--white); color: var(--primary); }
+    .btn-secondary { background: transparent; border: 2px solid rgba(255,255,255,0.75); color: var(--white); }
+    footer {
+      background: #11263d;
+      color: rgba(255,255,255,0.82);
+      padding: 56px 0 22px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h3 { color: var(--white); margin: 0 0 14px; }
+    .footer-grid p, .footer-grid li { color: rgba(255,255,255,0.7); }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+    .footer-grid li { margin: 8px 0; }
+    .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 18px; text-align: center; color: rgba(255,255,255,0.72); }
+    @media (max-width: 900px) {
+      .menu { display: none; }
+      .service-grid, .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html">HygieneXperts</a>
+      <a href="index.html" class="brand">HygieneXperts</a>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="phone" href="tel:+61422556202">+61422556202</a></li>
+        <li><a class="phone-pill" href="tel:+61422556202">+61422556202</a></li>
       </ul>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="eyebrow" style="color:#d7e9ff;">Specialist cleaning</div>
-      <h1>Commercial kitchen cleaning services designed for safety, compliance and performance.</h1>
-      <p>HygieneXperts delivers high-standard commercial kitchen cleaning for food businesses that need reliable grease removal, ventilation care and contamination control.</p>
+      <div class="eyebrow">Our services</div>
+      <h1>Commercial kitchen cleaning services for Sydney food businesses.</h1>
+      <p>HygieneXperts delivers specialist solutions for restaurants, cafes, commercial kitchens and high-volume food service spaces that require reliable, compliant and thorough cleaning.</p>
     </div>
   </section>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="eyebrow">Commercial kitchen expertise</div>
-        <h2>Specialist services for busy food service environments.</h2>
-        <p class="intro">From canopies and filters to exhaust ductwork and fryers, our cleaning service supports safe operations, better airflow and a cleaner presentation for your customers and staff.</p>
-      </div>
-    </section>
-
-    <section class="section" style="background:#edf5ff;">
-      <div class="container service-grid">
-        <article class="service-card">
-          <div class="eyebrow">01</div>
-          <h3>Rangehood, Canopy & Filter Cleaning</h3>
-          <p>Removes heavy grease buildup from rangehoods, canopies and filters to improve airflow, reduce fire risk and maintain kitchen cleanliness.</p>
+  <main class="section">
+    <div class="container">
+      <div class="service-grid">
+        <article class="service-item">
+          <h3>Rangehood, Canopy &amp; Filter Cleaning</h3>
+          <p>Removes built-up grease, odours and residue from extraction systems to improve airflow and reduce fire risk.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">02</div>
-          <h3>Exhaust Fan & Duct Cleaning</h3>
-          <p>Deep cleans fan housings and ductwork to improve air quality, protect equipment and support safer kitchen ventilation.</p>
+        <article class="service-item">
+          <h3>Exhaust Fan &amp; Duct Cleaning</h3>
+          <p>Clears venting and ductwork to restore efficiency, improve ventilation and support a safer kitchen environment.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">03</div>
-          <h3>Deep Kitchen & Cool Room Cleaning</h3>
-          <p>Targets high-touch and hard-to-reach surfaces in kitchens and cool rooms for a more hygienic and well-maintained operation.</p>
+        <article class="service-item">
+          <h3>Deep Kitchen &amp; Cool Room Cleaning</h3>
+          <p>Targets grease residue, hidden grime and operational spill zones across kitchen floors, walls and cold storage spaces.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">04</div>
-          <h3>Equipment & Fryer Cleaning</h3>
-          <p>Thorough cleaning and degreasing of fryers and equipment to help maintain food safety and improve equipment longevity.</p>
+        <article class="service-item">
+          <h3>Equipment &amp; Fryer Cleaning</h3>
+          <p>Restores fryers, prep surfaces and commercial kitchen equipment for cleaner operation and better food safety standards.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">05</div>
+        <article class="service-item">
           <h3>Cooking Oil Change Service</h3>
-          <p>Supports fryer performance and food quality with scheduled oil change and related maintenance support.</p>
+          <p>Assists with oil disposal and system maintenance to keep kitchen equipment operating efficiently and hygienically.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">06</div>
+        <article class="service-item">
           <h3>Duct Access Panel Installation</h3>
-          <p>Installs access panels to make future filter and duct cleaning easier, quicker and more efficient for ongoing maintenance.</p>
+          <p>Improves future maintenance access by creating clean, code-conscious access points in kitchen duct systems.</p>
         </article>
-        <article class="service-card">
-          <div class="eyebrow">07</div>
+        <article class="service-item">
           <h3>High-Pressure Cleaning</h3>
-          <p>Ideal for external kitchen zones, service areas and hard surfaces where grease and buildup need deeper pressure cleaning.</p>
+          <p>Removes heavy buildup from external kitchen surfaces, hard-to-clean walkways and operational areas requiring deep sanitation.</p>
         </article>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">Why it matters</span>
-          <h2>Keep your kitchen cleaner, safer and more efficient.</h2>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Fire risk reduction</h3>
-            <p>Grease removal in hoods, fans and ducts helps reduce one of the biggest risks in commercial food service.</p>
-          </article>
-          <article class="card">
-            <h3>Better air quality</h3>
-            <p>Clean ducts and extraction systems help improve airflow and reduce odour, smoke and contamination concerns.</p>
-          </article>
-          <article class="card">
-            <h3>Operational confidence</h3>
-            <p>Maintaining clean, well-functioning kitchen systems supports a more professional and efficient service environment.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <section class="cta-band">
-    <div class="container wrap">
+  <section class="cta">
+    <div class="container cta-inner">
       <div>
-        <div class="eyebrow" style="color:#d6e8ff;">Book your service</div>
-        <h2 style="margin:8px 0 0;">Need dependable commercial kitchen cleaning?</h2>
+        <h2>Need a tailored commercial kitchen cleaning plan?</h2>
       </div>
-      <div style="display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="btn primary" href="contact.html">Request a Quote</a>
-        <a class="btn secondary" href="tel:+61422556202">Call +61422556202</a>
+      <div class="btn-row">
+        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        <a href="tel:+61422556202" class="btn btn-secondary">Call +61422556202</a>
       </div>
     </div>
   </section>
@@ -161,30 +185,31 @@
   <footer>
     <div class="container footer-grid">
       <div>
-        <h4>HygieneXperts</h4>
-        <p class="small">Specialist commercial kitchen cleaning for hospitality, food service and workplace kitchens.</p>
-        <p class="small">Phone: <a href="tel:+61422556202">+61422556202</a><br>Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br>Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
+        <h3>HygieneXperts</h3>
+        <p>Commercial kitchen cleaning specialists for food businesses that need dependable, professional service.</p>
+        <p>Phone: <a href="tel:+61422556202">+61422556202</a><br />Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br />Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
       </div>
       <div>
-        <h4>Services</h4>
-        <ul class="small">
-          <li>Rangehood cleaning</li>
-          <li>Exhaust duct cleaning</li>
-          <li>Deep kitchen cleaning</li>
-          <li>Fryer & equipment cleaning</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Quick links</h4>
-        <ul class="small">
+        <h3>Quick links</h3>
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+      <div>
+        <h3>Service list</h3>
+        <ul>
+          <li>Rangehood cleaning</li>
+          <li>Exhaust duct cleaning</li>
+          <li>Cooking oil change</li>
+          <li>Cool room cleaning</li>
+        </ul>
+      </div>
     </div>
-    <div class="container copyright small">© 2026 HygieneXperts. All rights reserved.</div>
+    <div class="container copyright">© 2026 HygieneXperts. All rights reserved.</div>
   </footer>
 </body>
 </html>

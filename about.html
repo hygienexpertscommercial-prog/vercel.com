@@ -1,157 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About HygieneXperts, specialist commercial kitchen cleaning experts serving food businesses across Sydney.">
-  <title>About | HygieneXperts</title>
-  <link rel="canonical" href="https://hygienexperts.com.au/about.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About HygieneXperts, specialist commercial kitchen cleaners serving Sydney food businesses with reliable cleaning and maintenance services." />
+  <title>About HygieneXperts | Commercial Kitchen Cleaning Specialists</title>
+  <link rel="canonical" href="https://hygienexperts.com.au/about.html" />
   <style>
-    :root { --primary:#0d5ca8; --dark:#11263d; --light:#eef5ff; --text:#223247; --muted:#5a6b7c; --white:#fff; --border:#dbe7f6; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial, sans-serif; line-height:1.6; color:var(--text); background:#f8fbff; }
-    a { color:inherit; text-decoration:none; }
-    .container { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
-    header { background:rgba(17, 38, 61, 0.96); }
-    .nav { display:flex; align-items:center; justify-content:space-between; min-height:74px; }
-    .brand { color:var(--white); font-weight:800; letter-spacing:.04em; }
-    .menu { list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center; }
-    .menu a { color:var(--white); font-weight:600; }
-    .menu .phone { background:var(--white); color:var(--primary); padding:10px 16px; border-radius:999px; }
-    .hero { background:linear-gradient(135deg, #0d5ca8, #11263d); color:var(--white); padding:110px 0 80px; }
-    .hero h1 { font-size:clamp(2.2rem, 4vw, 3.4rem); margin:0 0 14px; }
-    .hero p { margin:0; max-width:760px; color:rgba(255,255,255,.86); }
-    .section { padding:80px 0; }
-    .section-header { margin-bottom:26px; }
-    .eyebrow { display:inline-block; font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); font-weight:800; }
-    h2 { font-size:clamp(2rem, 3vw, 2.8rem); margin:10px 0; }
-    .grid { display:grid; grid-template-columns:1.05fr .95fr; gap:24px; }
-    .panel { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:26px; }
-    .panel p { color:var(--muted); }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px; margin-top:18px; }
-    .card { background:var(--light); border:1px solid var(--border); border-radius:18px; padding:24px; }
-    .card h3 { margin-top:0; }
-    .card p { margin:0; color:var(--muted); }
-    .cta-band { background:linear-gradient(135deg, #0f4a8c, #16395d); color:var(--white); padding:52px 0; }
-    .cta-band .wrap { display:flex; justify-content:space-between; gap:16px; align-items:center; flex-wrap:wrap; }
-    .btn { display:inline-block; padding:15px 22px; border-radius:999px; font-weight:700; }
-    .btn.primary { background:var(--white); color:var(--primary); }
-    .btn.secondary { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,.7); }
-    footer { background:#0f1728; color:rgba(255,255,255,.85); padding:54px 0 16px; }
-    .footer-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:26px; }
-    .footer-grid h4 { margin-top:0; color:var(--white); }
-    .footer-grid ul { list-style:none; margin:0; padding:0; }
-    .footer-grid li { margin:10px 0; }
-    .small { font-size:.92rem; color:rgba(255,255,255,.72); }
-    .copyright { border-top:1px solid rgba(255,255,255,.08); margin-top:24px; padding-top:16px; text-align:center; }
-    @media (max-width:760px){ .menu{display:none;} .grid{grid-template-columns:1fr;} .footer-grid{grid-template-columns:1fr;} }
+    :root {
+      --primary: #0d5ca8;
+      --primary-dark: #0a467d;
+      --ink: #1f2d3d;
+      --muted: #586779;
+      --bg: #f4f8fc;
+      --white: #ffffff;
+      --line: #dfeaf5;
+      --accent: #eaf4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1140px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(17, 35, 52, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 78px; }
+    .brand { color: var(--white); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.04em; }
+    .menu { list-style: none; display: flex; align-items: center; gap: 22px; margin: 0; padding: 0; }
+    .menu a { color: var(--white); font-weight: 700; opacity: 0.9; }
+    .phone-pill {
+      display: inline-block;
+      background: var(--white);
+      color: var(--primary);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    .hero {
+      padding: 86px 0 70px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--white);
+    }
+    .eyebrow {
+      display: inline-block;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #d5e9ff;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); margin: 0 0 18px; line-height: 1.08; }
+    .hero p { margin: 0; font-size: 1.05rem; color: rgba(255,255,255,0.9); max-width: 760px; }
+    .section { padding: 80px 0; }
+    .grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: start; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 20px 45px rgba(17,35,52,0.04);
+    }
+    h2 { font-size: clamp(2rem, 3vw, 2.6rem); margin: 0 0 18px; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+    .stat {
+      background: var(--accent);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .stat strong { display: block; font-size: 2rem; color: var(--primary); }
+    .cta {
+      background: linear-gradient(135deg, #0f4f90, #163d66);
+      color: var(--white);
+      padding: 62px 0;
+    }
+    .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; }
+    .cta h2 { margin: 0; color: var(--white); }
+    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    .btn-primary { background: var(--white); color: var(--primary); }
+    .btn-secondary { background: transparent; border: 2px solid rgba(255,255,255,0.75); color: var(--white); }
+    footer {
+      background: #11263d;
+      color: rgba(255,255,255,0.82);
+      padding: 56px 0 22px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h3 { color: var(--white); margin: 0 0 14px; }
+    .footer-grid p, .footer-grid li { color: rgba(255,255,255,0.7); }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+    .footer-grid li { margin: 8px 0; }
+    .copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 18px; text-align: center; color: rgba(255,255,255,0.72); }
+    @media (max-width: 900px) {
+      .menu { display: none; }
+      .grid, .stats, .footer-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html">HygieneXperts</a>
+      <a href="index.html" class="brand">HygieneXperts</a>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="phone" href="tel:+61422556202">+61422556202</a></li>
+        <li><a class="phone-pill" href="tel:+61422556202">+61422556202</a></li>
       </ul>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="eyebrow" style="color:#d7e9ff;">About us</div>
-      <h1>Commercial kitchen cleaning specialists serving food businesses with care and precision.</h1>
-      <p>HygieneXperts exists to help commercial kitchens stay clean, safe and operationally efficient. We focus on specialist cleaning services that support compliance, protect equipment and create a better experience for staff and customers.</p>
+      <div class="eyebrow">About us</div>
+      <h1>Commercial kitchen cleaning done properly.</h1>
+      <p>HygieneXperts provides specialist cleaning services for commercial kitchens, food service venues and hospitality facilities that need dependable hygiene, grease control and safe, efficient operations.</p>
     </div>
   </section>
 
-  <main>
-    <section class="section">
-      <div class="container grid">
-        <div class="panel">
-          <div class="section-header">
-            <span class="eyebrow">Our story</span>
-            <h2>Built around quality, safety and kitchen performance.</h2>
-          </div>
-          <p>We recognised a gap in the market: many businesses needed a partner who understood the strict hygiene demands of commercial kitchens, not just a generic cleaner. That is why HygieneXperts specialises in high-risk cleaning areas such as rangehoods, exhaust systems, fryer equipment, cool rooms and hard-to-access kitchen surfaces.</p>
-          <p>Our approach is straightforward: clean thoroughly, work safely and help your business maintain a high standard of food safety and presentation. We combine specialist cleaning expertise with a practical understanding of hospitality operations, so we can work efficiently without disrupting service.</p>
-        </div>
-        <div class="panel">
-          <div class="section-header">
-            <span class="eyebrow">Why choose us</span>
-            <h2>Focused on commercial kitchen standards.</h2>
-          </div>
-          <p>Our team works with cafes, restaurants, takeaway businesses, hospitality venues, clubs and food production spaces. We understand the issues that matter most: grease build-up, poor airflow, compliance risk, unsanitary surfaces and equipment wear.</p>
-          <p>Whether you need routine maintenance or a deep clean, we deliver service with attention to detail, clear communication and dependable scheduling.</p>
-        </div>
-      </div>
-    </section>
+  <main class="section">
+    <div class="container grid">
+      <article class="card">
+        <h2>Built around kitchen performance and compliance.</h2>
+        <p>We specialise in the cleaning and maintenance required in demanding commercial kitchen environments. From extractor systems and ductwork to fryers, cool rooms and food prep areas, our focus is on creating cleaner, safer and more efficient workspaces.</p>
+        <p>Our approach is practical and thorough. Every job is planned around real operational needs, with careful attention to grease build-up, airflow management, hygiene standards and the day-to-day rhythm of busy food businesses.</p>
+        <p>HygieneXperts works with hospitality teams, restaurants, cafes, food manufacturers and commercial operators who need reliable service with clear communication, consistent quality and measurable results.</p>
+      </article>
+      <aside class="card">
+        <h2>Why businesses choose us</h2>
+        <p>Specialist knowledge of commercial kitchen cleaning and ventilation systems.</p>
+        <p>Reliable scheduling and responsive service support.</p>
+        <p>Professional technicians focused on safety, hygiene and presentation.</p>
+      </aside>
+    </div>
 
-    <section class="section" style="background:#edf5ff;">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">What we stand for</span>
-          <h2>Our values and commitments.</h2>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Professionalism</h3>
-            <p>We arrive on time, work carefully and uphold high standards in every commercial kitchen we service.</p>
-          </article>
-          <article class="card">
-            <h3>Safety</h3>
-            <p>We focus on grease reduction, ventilation care and equipment maintenance to support safe working conditions.</p>
-          </article>
-          <article class="card">
-            <h3>Compliance</h3>
-            <p>Our service helps maintain consistent cleanliness and reduces the risk of hygiene and fire-related issues.</p>
-          </article>
-          <article class="card">
-            <h3>Reliability</h3>
-            <p>We schedule around your trade hours and provide dependable service with clear communication from start to finish.</p>
-          </article>
-        </div>
+    <div class="container stats">
+      <div class="stat">
+        <strong>7</strong>
+        <span>Core kitchen services</span>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="eyebrow">How we work</span>
-          <h2>Practical service for busy food businesses.</h2>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Assessment</h3>
-            <p>We inspect the kitchen systems, grease points and equipment to identify the right level of cleaning.</p>
-          </article>
-          <article class="card">
-            <h3>Custom plan</h3>
-            <p>Every venue is different, so we tailor our service schedule and cleaning method to your business requirements.</p>
-          </article>
-          <article class="card">
-            <h3>Thorough clean</h3>
-            <p>We complete the cleaning efficiently and leave your kitchen ready for safe, high-quality operation.</p>
-          </article>
-        </div>
+      <div class="stat">
+        <strong>24/7</strong>
+        <span>Support available</span>
       </div>
-    </section>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Focus on commercial standards</span>
+      </div>
+    </div>
   </main>
 
-  <section class="cta-band">
-    <div class="container wrap">
+  <section class="cta">
+    <div class="container cta-inner">
       <div>
-        <div class="eyebrow" style="color:#d6e8ff;">Let’s talk</div>
-        <h2 style="margin:8px 0 0;">Need a specialist kitchen cleaning partner?</h2>
+        <h2>Need a specialist cleaning partner for your kitchen?</h2>
       </div>
-      <div style="display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="btn primary" href="contact.html">Request a Quote</a>
-        <a class="btn secondary" href="tel:+61422556202">Call +61422556202</a>
+      <div class="btn-row">
+        <a href="services.html" class="btn btn-primary">View Services</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
       </div>
     </div>
   </section>
@@ -159,30 +191,31 @@
   <footer>
     <div class="container footer-grid">
       <div>
-        <h4>HygieneXperts</h4>
-        <p class="small">Commercial kitchen cleaning specialists working across Sydney hospitality and food service businesses.</p>
-        <p class="small">Phone: <a href="tel:+61422556202">+61422556202</a><br>Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br>Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
+        <h3>HygieneXperts</h3>
+        <p>Specialist commercial kitchen cleaning services designed to improve safety, presentation and performance.</p>
+        <p>Phone: <a href="tel:+61422556202">+61422556202</a><br />Email: <a href="mailto:info@hygienexperts.com.au">info@hygienexperts.com.au</a><br />Website: <a href="https://hygienexperts.com.au/">https://hygienexperts.com.au/</a></p>
       </div>
       <div>
-        <h4>Services</h4>
-        <ul class="small">
-          <li><a href="services.html">Rangehood cleaning</a></li>
-          <li><a href="services.html">Duct cleaning</a></li>
-          <li><a href="services.html">Deep kitchen cleaning</a></li>
-          <li><a href="services.html">Fryer cleaning</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Quick links</h4>
-        <ul class="small">
+        <h3>Quick links</h3>
+        <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+      <div>
+        <h3>Core services</h3>
+        <ul>
+          <li>Rangehood cleaning</li>
+          <li>Exhaust duct cleaning</li>
+          <li>Cool room cleaning</li>
+          <li>Fryer and equipment services</li>
+        </ul>
+      </div>
     </div>
-    <div class="container copyright small">© 2026 HygieneXperts. All rights reserved.</div>
+    <div class="container copyright">© 2026 HygieneXperts. All rights reserved.</div>
   </footer>
 </body>
 </html>
